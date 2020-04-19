@@ -10,7 +10,7 @@
 }
 
 header img {
-    background-color: hsl(180, 8%, 52%);
+    background-color: #5da5a4;
 }
 body{
     background-color: hsl(180, 31%, 95%);
@@ -25,14 +25,27 @@ body{
     margin-bottom: 50px;
     background-color: white;
     padding: 30px;
-    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    }
+
+.card:hover {
+    border-left: 4px solid #5da5a4;
 }
 
+.card:nth-child(1), .card:nth-child(2){
+    border-left: 4px solid #5da5a4;
+}
+
+.card img {
+    height: max-content;
+    width: max-content;
+}
 
 
 .card .left div {
     display: flex;
-    justify-content: space-around;
+    width: max-content;
     }
 
 .new {
@@ -58,42 +71,95 @@ body{
     border: none;
 }
 
+.card h3:first-child{
+    color: #63baba;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+h3:hover {
+    color: #5da5a4;
+    cursor: pointer;
+}
+
+li{
+    opacity: 0.3;
+    padding-left: 10px;
+    width: max-content;
+}
+
  button {
     background-color: hsl(180, 31%, 95%);
     width: auto;
     margin: 5px;
     padding: 5px;
     border: none;
-    font-weight: bold;
-    
+    font-weight: bold;    
     height: 25px;
-    color: #63baba
+    color: #63baba;
+    border-radius: 5px;
+    
  }
 
-.card .right div {
-    display: flex;
-    /* justify-content: flex-end; */
-    /* position: absolute; */
-    
-        
-}
+ button:hover {
+     background-color:#5da5a4;
+     cursor: pointer;
+ }
+
 
 .left {
-    padding-left: 10px;
+    padding-left: 10px;    
 }
 .right {
+    display: flex;    
     padding-left: 100px;
     padding-top: 20px;
+    width: 1000px;
+    justify-content: flex-end;
+}
+
+.right button {
+    float: right;
 }
 
 .card ul {
     display: flex;
     justify-content: space-between;
     text-align: center;
+} 
 
+.card li {
+    margin-left: 30px;
 }
 
 .card li:first-child {
+    margin-left: -12px;
     list-style: none;
 }
+
+@media (max-width: 500px) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
