@@ -8,9 +8,12 @@
     font-family: Spartan, sans-serif;
     font-weight: 500;
 }
-
+header {
+    width: 100%;
+}
 header img {
     background-color: #5da5a4;
+    width: 100%;
 }
 body{
     background-color: hsl(180, 31%, 95%);
@@ -22,6 +25,7 @@ body{
 
 .card {
     display: flex;
+    justify-content: space-evenly;
     margin-bottom: 50px;
     background-color: white;
     padding: 30px;
